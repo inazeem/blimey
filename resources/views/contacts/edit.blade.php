@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default form-panel">
-                <div class="panel-heading">Add a contact</div>
+                <div class="panel-heading">Edit a contact</div>
                 <div class="panel-body">
 
                     <form class="form-horizontal" role="form" method="POST" action="/contacts/{{$contact->id}}/update">
