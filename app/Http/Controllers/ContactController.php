@@ -36,18 +36,27 @@ class ContactController extends Controller
     }
 
 
-    //
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index(){
 
         $contacts = Contact::all();
         return view('contacts.list',compact('contacts'));
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function create(){
 
         return view('contacts.create');
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function store(Request $request){
 
         $this->validator($request);
@@ -64,12 +73,21 @@ class ContactController extends Controller
         return redirect('contacts');
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function edit($id){
 
         $contact = Contact::findorfail($id);
         return view('contacts.edit',compact('contact'));
     }
 
+    /**
+     * @param $id
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function update($id, Request $request){
 
         $request->published_at = Carbon::now();
@@ -84,6 +102,10 @@ class ContactController extends Controller
         return redirect('contacts');
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function destroy($id){
 
         $contact = Contact::find($id);
