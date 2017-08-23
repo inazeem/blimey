@@ -114,5 +114,10 @@ class ContactController extends Controller
 
     }
 
+    public function getContacts(){
+
+        return Contact::all();
+    }
+
 
 }
