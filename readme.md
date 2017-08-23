@@ -1,3 +1,18 @@
+# A test application
+
+This application has features like acl, authentication, contacts and unit test
+
+# How to install
+
+Create the .env file, setup the database
+Run Migration
+Run composer update if you have installed it.
+Register yourself and assign admin or basic user rights.
+
+That's it...!
+
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
