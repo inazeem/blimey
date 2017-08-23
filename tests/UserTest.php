@@ -11,7 +11,7 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testGetContacts()
     {
         $contact_obj = new \App\Http\Controllers\ContactController;
         $contact = $contact_obj->getContacts();
