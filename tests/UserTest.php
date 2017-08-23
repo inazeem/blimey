@@ -16,6 +16,5 @@ class UserTest extends TestCase
         $contact_obj = new \App\Http\Controllers\ContactController;
         $contact = $contact_obj->getContacts();
         $this->assertEquals('2', count($contact));
-        //$this->assertTrue(true);
     }
 }
