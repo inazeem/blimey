@@ -1,4 +1,4 @@
-# A test application
+# A Test Application for Employers
 
 This application has features like acl, authentication, contacts and unit test
 
