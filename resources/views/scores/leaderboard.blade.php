@@ -23,7 +23,7 @@
                         <table class="leaderboard table table-bordered table-striped table-hover data-table">
                             <thead>
                                 <tr>
-                                    <th>Position</th>
+                                    <th>Pos.</th>
                                     <th>Full Name</th>
                                     <th>Score</th>
                                     <th></th>
@@ -32,7 +32,7 @@
                             <tbody>
                                 @foreach( $scores as $key =>$score )
                                 <tr role="row" class="odd">
-                                    <td>{{++$key}}</td>
+                                    <td>#{{++$key}}</td>
                                     <td>{{$score->runner->fullname}}</td>
                                     <td>{{$score->score}}</td>
                                     <td>
