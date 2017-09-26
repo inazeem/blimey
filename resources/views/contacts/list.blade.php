@@ -5,10 +5,9 @@
     <div class="row heading">
         <div class="col-xs-12">
             @role('administrator')
-                <a href="/contacts/create/" class="btn btn-success pull-right"> Create a new contact
-                </a>
+                <a href="/contacts/create/" class="btn btn-success pull-right"> Create a new runner</a>
             @endrole
-            <h1><i class="fa fa-user" aria-hidden="true"></i> <span>Contacts</span> </h1>
+            <h1><i class="fa fa-user" aria-hidden="true"></i> <span>Runners</span> </h1>
 
         </div>
     </div>

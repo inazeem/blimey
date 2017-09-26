@@ -35,3 +35,6 @@ Route::post('/contacts/{id}/update','ContactController@update');
 
 Route::get('/contacts/delete/{id}','ContactController@destroy');
 
+Route::get('leaderboard','ScoreController@index');
+Route::post('score/store','ScoreController@store');
+Route::get('score/delete/{id}', 'ScoreController@destroy');

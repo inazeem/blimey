@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Blimey Creative - Laravel
+                    Purpose Media Leaderboard
                 </a>
             </div>
 
@@ -48,7 +48,8 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/contacts') }}">Contacts</a></li>
+                    <li><a href="{{ url('/contacts') }}">Runners</a></li>
+                    <li><a href="{{ url('/leaderboard') }}">Leaderboard</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
